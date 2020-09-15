@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Meu Primeiro Site - Mineração Consciente </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para configurar a responsividade-->
+        <link rel="shortcut icon" href="icon/logo-aba.png" type= "image.png"> <!-- icone na guia do computador-->
+        <link rel="stylesheet" href= "style.css" > <!-- configuração da página -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet"> <!-- Fontes das letras-->
+    </head>
+    
+    <body>
+        <div id=logodiv> <!-- MENU PRINCIPAL-->
+            <header> <!-- CABEÇALHO -->
+                <div id=linklogo> <!-- Logo clicável retorna para a capa do site -->
+                    <a href= "#website-cover">
+                        <img id="logo" src="icon/logo-menu.png" alt=" Logo do site Mineração Consciente"> 
+                    </a>
+                </div>
+                
+                <ul id="menu">
+                    <a id="listamenu" href="#the-project"><li>  O PROJETO</li></a>
+                    <a id="listamenu" href="#the-mining-and-the-society"><li> MINERAÇÃO </li></a>
+                    <a id="listamenu" href="#recycling"> <li> E-LIXO </li></a> 
+                    <a id="listamenu" href="#projections-and-extrapolations"><li> PROJEÇÕES </li></a>
+                    <a id="listamenu" href="#understand-more"><li> MAIS</li></a>
+                    <a id="listamenu" href="#about-me"><li> SOBRE </li></a>
+                </ul>
+            </header>
+        </div>
+        
+        <div id=menuhamburguerdiv> <!-- Cria as barras do menu hamburguer-->
+            <input type="checkbox" id="check">
+            <label for="check">
+                <div class="menulateral"> 
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        
+            <nav id="menuhamburguer">
+                <a href="#the-project" onclick="document.getElementById('check').checked = false">  O PROJETO</a>
+                <a href="#the-mining-and-the-society" onclick="document.getElementById('check').checked = false"> MINERAÇÃO </a>
+                <a href="#recycling" onclick="document.getElementById('check').checked = false"> E-LIXO </a>
+                <a href="#projections-and-extrapolations" onclick="document.getElementById('check').checked = false"> PROJEÇÕES </a>
+                <a href="#understand-more" onclick="document.getElementById('check').checked = false"> MAIS</a>
+                <a href="#about-me" onclick="document.getElementById('check').checked = false"> SOBRE </a>
+            </nav>
+        </div>
+
+        <div id="website-cover"> <!-- CAPA -->
+            <h1>MINERAÇÃO<br>CONSCIENTE</br></h1> 
+            <h2>"A cada volta de caminho aponta uma forma de ser, em ferro, eterna, e sopra eternidade na fluência.(...)"</h2> 
+            <p class="Drummond">- Carlos Drummond de Andrade</p>
+            <a id= "ods-in-mining" href="https://www.undp.org/content/dam/brazil/atlas_mineracao_WEB.pdf" target="_blank"> A mineração e os 17 ODS </a>
+        </div>
+
+        <section id="the-project" class= "burlywood"> <!-- Seção: O PROJETO -->
+            <h3> O PROJETO </h3> <hr>
+
+            <div class= "colunm-two">
+                <p class= "justify"> Desde 1972 a Organização das Nações Unidas, <a class= "explanatory-link"href="https://nacoesunidas.org/" target="_blank">ONU</a>, realiza conferências para debater questões relacionadas ao meio ambiente e ao desenvolvimento sustentável. A partir de 1992 a ONU criou agendas com um diagrama para a proteção do nosso planeta e o seu desenvolvimento. Atualmente, estamos na <a class= "explanatory-link" href="https://nacoesunidas.org/pos2015/" target="_blank">Agenda 2030</a>, elaborada em Setembro de 2015, que conta com 17 Objetivos de Desenvolvimento Sustentável. A mineração relaciona-se diretamente com todas e possui um atlas onde é mapeado a maneira que o setor extrativista está ligado com as ODS.</p>
+                <p class= "justify"> Os recursos naturais podem ser classificados como finitos ou infinitos, por isso é importante entender e mudar nossos hábitos promovendo a produção e consumo sustentáveis - ODS 12. Os recursos minerais são finitos, pois demoram muito para serem repostos pela natureza. Segundo a Agência Nacional de Mineração, ANM, em 2019 o Brasil exportou <a class= "explanatory-link" href="https://www.gov.br/anm/pt-br/centrais-de-conteudo/publicacoes/serie-estatisticas-e-economia-mineral/anuario-mineral/anuario-mineral-brasileiro/copy_of_AMB2019_anobase2018_FINAL.pdf/view" target="_blank">450.392.996t</a> de ferro, o que corresponde a mais de 60% dos commodities exportados.</p>
+                <p class="justify">Além do minério de ferro, o país exporta alumínio, cobre, cromo, estanho, manganês, nióbio, ouro, vanádio e zinco, como mostrado pelo gráfico de distribuição das exportações por produto.</p> 
+            </div>
+            
+            <div class= "colunm-two">
+                <figure class="figure">
+                    <img class="img-mining" src="img/materia-prima-grafico.jpg " alt= "Gráfico representando a exportação brasileira de acordo com os recursos exportados. Onde Ferro é o minério mais exportado, e representa 64,8% da demanda, em seguida temos o ouro com 11%. Nos 24,2% restantes tem-se cobre, alumínio, manganês e outros. " />
+                    <figcaption> <a id="font" href="https://www.gov.br/anm/pt-br/centrais-de-conteudo/publicacoes/serie-estatisticas-e-economia-mineral/informe-mineral/publicacoes-nacionais/informe_mineral_1_2019.pdf" target="_blank">Fonte: Informe Mineral, 1º/2019.</a> </figcaption>
+                </figure>
+                <p class= "justify"> Cada vez que  produzimos algo novo necessitamos de mais matéria prima, por isso é necessário mudarmos nossas posturas e reciclarmos de forma eficiente o nosso lixo. A reciclagem tem como um dos principais efeitos positivos ao meio ambiente a redução da extração de recursos naturais para a fabricação de novos produtos. Visto que após consumo o material é reaproveitado ou reprocessado, sendo possível reintroduzí-lo na cadeia produtiva. </p>
+            </div>
+        </section>
+
+        <section id="the-mining-and-the-society" class= "yellow" > <!-- Seção: A MINERÇÃO E A SOCIEDADE -->
+            <h3> A MINERAÇÃO E A SOCIEDADE </h3> <hr>
+            
+            <div class="colunm-two">
+                <p class= "justify"> O aproveitamento dos recursos minerais como atividade socioeconômica no Brasil iniciou-se no período colonial, na primeira parte do Século  XVII, com as expedições chamadas entradas e bandeiras, onde os portugueses vasculhavam o interior do território em busca de metais valiosos (ouro, prata e cobre) e pedras preciosas (diamantes e esmeraldas). Minas Gerais, Goiás e Mato Grosso deram origem as primeiras minas no país.</p>
+                <p class= "justify"> Atualmente, a mineração é um dos setores básicos da economia do país e contribui de forma decisiva para o bem estar e a melhoria da qualidade de vida da população no presente e no futuro, sendo essencial para o desenvolvimento da sociedade, desde que seja relizada com responsabilidade social e ambiental. </p>
+                <p class= "justify"> A extração dos recursos minerais permitiu que a sociedade pudesse desenvolver-se em diversos aspectos. Os recursos estão presentes diretamente desde as roupas que vestimos até as estruturas de nossas casas. Os minérios estão presentes, também, em nossos acessórios (brincos, óculos, colares e relógios) e, principalmente, nos eletrodomésticos e eletrônicos, como os celulares. </p>
+                <p class= "justify">A vida útil média da maioria dos eletrodomésticos é de 7 anos, e embora muitos eletrônicos e eletrodomésticos tenham uma vida útil superior a esta, ainda assim, são descartados de forma incorreta antes de estragarem, pois a tecnologia se tornou obsoleta. </p>
+                <p class="justify">Presume-se que os dispositivos móveis são os equipamentos que ficam menos tempo com seus usuários, sendo este tempo em média 2 anos e meio. </p>
+                <p class= "justify">As câmeras fotográficas, as impressoras e os computadores também apresentam um período de posse menor que os eletrodomésticos, cerca de 3 anos.</p>
+            </div>
+            <div class="colunm-two">
+                <p class= "justify"> Apesar do descarte incorreto podemos considerar os celulares modernos como pequenos depósitos de minerais metálicos, devido a sua composição.</p>
+                
+                <figure class="figure">
+                    <img class= "img-mining" src="img/componetes-celular.png" alt= " Elementos químicos presentes nos celulares. Dentre a composição os mais utilizados sâo: aluminío, cobre, prata, silício e ouro." />
+                    <figcaption> <a id="font" href="https://estranhosidade.files.wordpress.com/2016/02/quimicacelular.png" target="_blank"> Adaptado: Compound Interest, 2014.</a> </figcaption>
+                </figure>
+            
+                <p class= "justify">E podemos mensurar a quantidade dos minérios utilizado, por exemplo, um iPhone pode conter 0,34g de prata, 0,034g de ouro, 0,015g de paládio e menos de um miligrama de platina. Eles contém, também, metais mais comuns como aproximadamente 25g de alumínio e cerca de 15g de cobre. Com essa composição é possível reciclar até 80% dos componentes de um telefone móvel.</p>
+            </div>
+        </section>
+
+        <section id="recycling" class= "orange"> <!-- Seção: E-LIXO -->
+            <h3> E-LIXO </h3> <hr>
+            
+            <div class= "colunm-two">
+                <iframe  width="" height="" src="https://www.youtube.com/embed/jr4--3Mkhqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class= "colunm-two"> 
+                <p class="justify"> O avanço tecnológico aumentou o consumo dos equipamentos eletrônicos. O efeito negativo dessa evolução? Aumento significativo do e-lixo nos lixões e aterros. </p> 
+                <p class= "justify"> No Brasil, projeta-se que anualmente é produzido  1,5 milhão de toneladas de lixo eletrônico. Aproximadamente, cerca de 7,4kg por cada habitante. Além disso, estima-se que em 2021 atingirá-se a geração de 52,2 milhões de toneladas de lixo eletrônico por ano no mundo.</p>
+            </div>
+        </section>
+
+        <section id="how-do" class= "orange"> <!-- Seção: E-LIXO -->
+            <h3> Como funciona?</h3> 
+        
+            <div class= "colunm-two">
+                <p class="justify"> A reciclagem dos resíduos eletrônicos consiste na sequência de várias etapas que têm o objetivo de retornar para o processo industrial os detritos de um objeto separando-os para reutilizá-los como matéria-prima.</p> 
+                <p class="justify"> O processo se inicia com a coleta do e-lixo por uma central de reciclagem. Posteriomente, temos a etapa de triagem, onde ocorre a descaracterização dos aparelhos por um processo chamado manufatura reversa, ou seja, eles são desmontados. Neste momento ocorrem também uma classificação do material que compõe o eletrônico (plásticos, metais, vidros, placas de circuito, elementos químicos, metais pesados).</p>
+            </div>
+        
+            <div class="colunm-two">
+                <p class="justify"> Em seguida temos a etapa de destinação, nesse momento os constituintes que podem ser reciclados são encaminhados para o reciclador mais adequado, para minimizar os custos com o repasse do material a ser reciclado, a responsável pelo transporte reduz as peças por trituração ou compactação.  Se a empresa que efetua as etapas anteriores tiver estrutura para isso ela pode efetuar a reciclagem no mesmo local.</p>
+                <p class="justify">Por fim, o fornecedor dos resíduos recebe um documento correspondente ao quão efetivo foi o processo adequado de descarte. Esta etapa é a certificação.</p>
+            </div>
+        </section>
+
+        <section id="benefits" class= "orange"> <!-- Seção: E-LIXO -->
+            <h3> Vantagens </h3>
+        
+            <div class= "colunm-four">
+                <img class= "icon"  src="icon/mountain.svg" alt="Mãos segurando uma muda">
+                <h4> Meio <br> Ambiente </h4>
+                <p class= "center">Redução da quantidade de resíduos depositados em aterros.</p>
+                <p  class= "center"> Diminuição do lançamento de dióxido de carbono na atmosfera.</p>
+                <p class= "center">  Minimização do impacto ambiental acarretado pela atividade mineradora. </p>
+            </div>
+        
+            <div class= "colunm-four">
+                <img class= "icon"  src="icon/coal.png" alt= "Vagão com minério de ferro dentro">
+                <h4> Recursos <br> Minerais </h4>
+                <p class= "center"> A redução da extração de recursos naturais para a produção de novos produtos pode chegar à 11 Mil toneladas por ano no Brasil (valor calculado com base no padrão de consumo e descarte dos eletrônicos atual).</p>
+                <p class= "center"> Aumento da vida útil das minas. </p>
+            </div>
+        
+            <div class= "colunm-four">
+                <img class= "icon" src="icon/welding.svg" alt="Desenho da máscara de proteção de soldador">
+                <h4> Matéria <br> Prima </h4>
+                <p class= "center"> O uso de material reciclado como matéria-prima pode gerar redução no custo de produção dos novos produtos. Visto que os insumos da matéria reciclada, a chamada sucata, em alguns casos é a metade do valor gasto em uma produção primária. </p>
+            </div>
+        
+            <div class= "colunm-four">
+                <img class= "icon" src="icon/industry.png" alt="Desenho de uma indústria">
+                <h4> Indústria </h4>
+                <p class="center"> Redução do volume de água e energia necessários para a produção de novos artigos. </p>
+                <p class= "center"> Geração de renda ao longo da cadeia de logística reversa.</p>
+                <p class= "center"> Diminuição do volume de minérios importados. </p>
+            </div>
+        </section>
+
+        <section id="projections-and-extrapolations" class="yellow"> <!-- Seção: PROJEÇÕES E EXTRAPOLAÇÕES--> 
+            <h3>PROJEÇÕES E EXTRAPOLAÇÕES</h3> <hr>
+        
+            <div class= "colunm-two">
+                <p class= "justify"> Em 2019, o Brasil produziu cerca de 79 milhões de resíduos sólidos. Sendo 72,7 milhões coletados, correspondente a 92% do total. Esses resíduos sólidos compreendem lixo doméstico e limpeza urbana. Segundo a Política Nacional de Resíduos Sólidos - <a class= "explanatory-link" href="https://mma.gov.br/pol%C3%ADtica-de-res%C3%ADduos-s%C3%B3lidos" target="_blank">PNRS</a>, 30% desse lixo têm potencial para ser reciclado, porém apenas 3% é reaproveitado e transformado em matéria prima para novos produtos.</p> 
+                <p class= "justify">Além disso, vidro, plástico, papel e metal são os resíduos com maior porcentagem de reciclagem, e representam 68% dos sólidos urbanos. Conforme o levantamento do Sindicato Nacional das Empresas de Limpeza Urbana - Selurb, o país deixa de recolher mais de R$ 5,7 bilhões para a economia ao não reciclar .</p>
+                <p class= "justify"> Consoante a Fundação Getúlio Vargas, há um ano o Brasil detinha 230 milhões de smartphones em uso. Ademais, a população brasileira tem dois dispositivos digitais (smartphones, computadores, notebooks e tablets) por habitante, o que resultava em 420 milhões de aparelhos ativos no ano passado, em 2020 já são 424 milhões. A tecnologia de um smartphone se torna ultrapassada em menos de 1 ano, em metrópoles como São Paulo os dispositivos são trocados com 1 ano e 1 mês de uso. </p>
+                <p class="justify"> Se reproduzirmos esse hábito em um cenário nacional, projetando que somente 3% destes aparelhos serão reciclados, teremos 223,1 milhões de celulares nos lixões anualmente. Mais do que isso, teremos que extrair mais 3.346,5 toneladas de cobre e 5.577,5 toneladas de alumínio para inserir no mercado a mesma quantidade de smartphone que não foi reciclada citada acima. Por mais que seja uma projeção grosseira por partir do pressuposto que todos os telefones são compostos, em média, por 25g de alumínio e 15g de cobre, e trabalhar com o tempo médio inferior ao de 2 anos e meio, se filtrarmos mais os dados com os hábitos de cada estado encotraremos valores superiores a estes. Vale ressaltar ainda que estamos apresentando dados referentes somentes aos resíduos produzidos pelos cidadãos que moram no Brasil.</p>
+                <p class="justify"> Utilizando a projeção do crescimento populacional do IBGE como base, e assumindo que o número de celular por habitante, no Brasil, seja de 1,09 como constante podemos projetar que para manter o padrão de consumo atual e sem a mudança de postura dos cidadãos em 10 anos nós encontraremos nos lixões aproximadamente 2,3 bilhões de aparelhos telefônicos. </p>
+            </div>
+        
+            <div class= "colunm-two">
+                <p class= "justify">Para visualizarmos melhor os dados relatados tem-se a tabela abaixo:</p>
+            
+              <div class="table">
+               <table id="table" ><!--Inserir a tabela-->
+                <tr> 
+                    <td> Ano </td>
+                    <td> Smartphones descartados</td>
+                </tr>
+                <tr> 
+                    <td> 2019</td>
+                    <td>223.100.000,00</td>
+                </tr>
+                <tr> 
+                    <td>2020</td>
+                    <td>224.710.905,20</td>
+                </tr>
+                <tr> 
+                    <td>2021</td>
+                    <td>226.368.412,20</td>
+                </tr>
+                <tr> 
+                    <td>2022</td>
+                    <td>227.971.759,10</td>
+                </tr>
+                <tr> 
+                    <td>2023</td>
+                    <td>229.516.540,60</td>
+                </tr>
+                <tr> 
+                    <td>2024</td>
+                    <td>231.002.397,90</td>
+                </tr>
+                <tr> 
+                    <td>2025</td>
+                    <td>232.429.292,90</td>
+                </tr>
+                <tr> 
+                    <td>2026</td>
+                    <td>233.795.495,30</td>
+                </tr>
+                <tr> 
+                    <td>2027 </td>
+                    <td>235.099.371,40</td>
+                </tr>
+                <tr> 
+                    <td>2028 </td>
+                    <td>236.399.291,30</td>
+                </tr>
+               </table>
+             </div> 
+             
+             <p class= "justify"> Nessa projeção podemos olhar além da quantidade de telefones descartados, basta enxergá-los como pequenas minas de aluminio, cobre, prata, ouro e paládio.</p>
+             <p class= "justify"> E assim teremos a dimensão da quantidade de recursos metálicos que podemos extrair a menos, como mostrado no gráfico a seguir:</p>
+                            
+              <div class= distribuitiongraphic>
+                <h5> Distribuição porcentual das toneladas de minério extraídas para fabricar novos celulares entre os anos de 2019 e 2028</h5>
+                <div class="graphic">
+                    <div class="pieBackground"></div>
+                    <div id="pieSlice2" class="hold">
+                     <div class="pie"></div> <!--Cobre-->
+                    </div>
+                    <div id="pieSlice3" class="hold">
+                     <div class="pie"></div> <!--Ouro+Prata+Paládio-->
+                    </div>
+                </div>
+                <fieldset>
+                    <table>
+                        <p class="center"> LEGENDA </p>
+                        <ul id= legend class="justify">
+                            <li class= "aluminio"> Alumínio - 61,9% </li>
+                            <li class= "cobre"> Cobre - 37,14% </li>
+                            <li class= "outros"> Ouro+Paládio+Prata - 0,96%</li>
+                        </ul>
+                    </table>
+                </fieldset>
+               </div>
+            </div>
+        </section>
+
+        <section id= "understand-more" class= "burlywood"> <!-- Seção: ENTENDA MAIS-->
+            <h3>ENTENDA MAIS</h3> <hr>
+            
+            <div class="text">
+                <p class= "justify">A <a class= "explanatory-link" href="http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm" target= "_blank">Lei Federal nº 12.305/2010</a>, que cria a Política Nacional de Resíduos Sólidos, trata sobre alguns aspectos relativos ao destino de materiais inservíveis. A lei obriga que fabricantes, distribuidores, comerciantes, consumidores e os titulares dos serviços públicos de limpeza tomem medidas para minimizar o volume de resíduos gerados e instituir uma cadeia de recolhimento e destinação ambientalmente adequada pós-consumo, o que ocasiona a implementação de sistemas de logística reversa (após o uso, os produtos são devolvidos e recolhidos para tratamento adequado) por parte das fabricantes de produtos eletrônicos, pilhas e baterias.</p>
+            </div>
+        
+            <div class= "colunm-two">
+                <iframe width="" height="" src="https://www.youtube.com/embed/OQ5jpiKzNqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        
+            <div class= "colunm-two">
+                <iframe width="" height=""src="https://www.youtube.com/embed/52pfRQawboA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id= "points" class= "burlywood"> <!-- Seção: ENTENDA MAIS-->
+            <h3> Faça sua parte!</h3>
+        
+            <div class="text">
+                <p class="justify"> Quando for descartar o seu equipamento eletrônico descarte-o no ponto de coleta mais próximo. Você pode encontrar o ponto de coleta mais apropriado de acordo com o resíduo através do <a class="explanatory-link" href="https://www.ecycle.com.br/postos/reciclagem.php" target="_blank" >eCycle</a>.</p>
+                <p  class="justify">Além dessa opção, você pode efetuar o descarte conforme a marca dos eletrônicos.  As fabricantes também são responsáveis por separar os componentes para garantir a destinação adequada dos componentes enviando-os para a reciclagem, ao utilizá-los em novos produtos ou ao encaminhá-los para aterros especiais. Marcas de smartphones mais comuns no Brasil:</p>
+            
+                <div class="colunm-five">
+                    <a class= "explanatory-img" href="https://www.apple.com/br/recycling/" target="_blank"><img class="logomarca" src="icon/logomarca-apple.png" alt="Logo da Apple"></a>
+                </div>
+            
+                <div class="colunm-five">
+                    <a class= "explanatory-img" href="https://www.asus.com/br/support/callus/" target="_blank"> <img class="logomarca" src="icon/logomarca-asus.png" alt="Logo da Asus"> </a>
+                </div>
+            
+                <div class="colunm-five">
+                    <a class= "explanatory-img" href="https://www.lg.com/br/suporte/coleta-seletiva" target="_blank"><img class="logomarca" src="icon/logomarca-lg.png" alt="Logo da LG"></a>
+                </div>
+                
+                <div class="colunm-five">
+                    <a class= "explanatory-img" href="https://www.motorola.com.br/institucional/reciclagem" target="_blank"> <img class="logomarca" src="icon/logomarca-motorola.png" alt="Logo da Motorola"> </a>
+                </div>
+            
+                <div class="colunm-five">
+                    <a class= "explanatory-img" href="https://www.samsung.com/br/support/mobile-devices/what-is-the-samsung-recycling-program/" target="_blank"> <img class="logomarca" src="icon/logomarca-samsung.png" alt="Logo da Samsung"> </a>
+                </div>
+            </div>     
+        </section>
+
+        <section id= "about-me" class= "light-blue"> <!-- Seção: SOBRE MIM-->
+            <h3> SOBRE MIM</h3> <hr>
+        
+            <div class= "colunm-two"> 
+                <p class= "justify"> Olá leitor(a), eu sou a Alice Rodrigues Bento, tenho 22 anos e o Mineração Consciente é o meu primeiro site! </p>
+                <p class= "justify"> Nascida e criada em Belo Horizonte, capital de Minas Gerais, estado que teve a <a class= "explanatory-link" href="https://sistemas.anm.gov.br/arrecadacao/extra/Relatorios/distribuicao_cfem_ano.aspx?ano=2019" target= "_blank"> 2ª maior arrecadação</a> de Compensação Financeira pela Exploração de Recursos Minerais - <a class= "explanatory-link" href="https://sistemas.anm.gov.br/arrecadacao/extra/Relatorios/distribuicao_cfem.aspx#:~:text=A%20Compensa%C3%A7%C3%A3o%20Financeira%20pela%20Explora%C3%A7%C3%A3o%20de%20Recursos%20Minerais,parte%20das%20empresas%20de%20minera%C3%A7%C3%A3o.%20Uni%C3%A3o.%20ANM%3A%209%2C8%25." target= "_blank"> CFEM</a> em 2019, a mineração sempre foi uma grande paixão minha.</p>
+                <p class= "justify">Atualmente, sou estudante de Engenharia de Minas no Centro Universitário de Belo Horizonte - UniBH. Acredito que ao compartilhar o conhecimento que adquiro todos os dias na graduação posso conscientizar as pessoas sobre a importância da mineração para o desenvolvimento da sociedade. Além disso, nós cidadãos temos papel significativo na maneira como a exploração mineral é feita. </p> 
+                <p class= "justify"> O Programa Meu Primeiro Site possibilitou que eu fizesse isso através do desenvolvimento web. Nele aprendi o que está por trás dos sites e a fazê-lo para conseguir compartilhar com mais pessoas a necessidade de reciclarmos o e-lixo. </p>
+                <!-- <p class= "justify"> Gostaria de agradecer a JA Brasil e a Microsoft por possibilitarem a realização deste programa e pela qualidade dos conteúdo, aos professores que para que eu desenvolve-se a página do Mineração Consciente dedicaram-se compartilharando seu tempo e seu conhecimento comigo, e por último, mas não menos importante aos meus amigos que me incetivaram nesta jornada e contribuiram para que eu finaliza-se de forma satisfatória o meu projeto. </p> -->
+                <p class= "justify"> Espero que com essa leitura eu possa ter colaborado para que você entenda o nosso papel como cidadãos para que os 17 ODS da Agenda 2030 sejam alcançados. Abraços. Até uma próxima! </p>
+            </div>
+
+        <div class="colunm-two">
+            <img class="img-about-me" src="img/20200831_165300.jpg" alt="Na imagem tem-se uma mulher negra olhando uma rocha atráves de uma lupa de geólogo"/>
+        </div>
+        </section>
+
+        <footer><!-- RODA PÉ-->
+            <div class= "colunm-two">
+                <h4> Meu Primeiro Site</h4>
+                <p> Projeto desenvolvido durante o curso Meu Primeiro Site, promovido pela Junior Achievement Brasil e Microsoft. </p>
+            </div>
+        
+            <div class= "colunm-two">
+                <div class= "email">
+                    <img  class="icons-footer" src="icon/email.png"  alt="icone de e-mail: envelope">
+                    <p> alice.rodriguesb@hotmail.com </p>
+                </div>
+            
+                <div class= "linkedin" >
+                    <img class= "icons-footer" src="icon/linkedin.png"  alt="icone do linkedin: in">
+                    <p><a href="https://www.linkedin.com/in/alice-rodrigues-67962915a" target="_blank"> Alice Rodrigues</a></p>
+                </div>
+            
+                <div class= "github">
+                    <img class= "icons-footer" src="icon/github.png" alt="icone do github: gatinho">
+                    <p><a href="https://github.com/alicerodrigs" target="_blank">@alicerodrigs</a></p>
+                </div>
+                <p class="data">© 2020</p>
+        </footer>
+    </body>
+</html>
